@@ -1,0 +1,199 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Personal Portfolio Website</title>
+    <link rel="stylesheet" href="main.css">
+    <script src="https://kit.fontawesome.com/3d59d92129.js" crossorigin="anonymous"></script>
+    <link href="https://fonts.googleapis.com/css2?family=Montserrat:wght@200&display=swap" rel="stylesheet">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Poppins:ital,wght@0,300;0,400;1,400&display=swap" rel="stylesheet">
+    
+</head>
+<body>
+    <div id="header"> 
+        <div class="container"> 
+            <nav>
+                <input type="checkbox" id="nav-toggle">
+                <div class="logo">D<strong>/L</strong></div>
+                <ul class="links">
+                    <li><a href="main.html">Home</a></li>
+                    <li><a href="about.html">About</a></li>
+                    <li><a href="project.html">Project</a></li>
+                    <li><a href="contact.html">Contact</a></li>
+                </ul>
+                <label for="nav-toggle" class="icon-burger">
+                    <div class="line"></div>
+                    <div class="line"></div>
+                    <div class="line"></div>
+                  </label>
+            </nav>
+            <div class="header-text">
+                <p>KPU Information Technology Student</p>
+                <h1>Hi, my name is <span>Dieu Luong</span></h1><br>
+                <div class="text-3">And I'm a <span class="auto-input"></span></div>
+            </div>
+        </div>
+    </div>
+    <!----------------about-------->
+    <div id="About">
+        <div class="container">
+            <div class="row">
+                <div class="about-col-1">
+                    <img src="hinhP/IMG_1814.JPG" width="350" height="400">
+                </div>
+                <div class="about-col-2">
+                    <h1 class="sub-title">About Me</h1>
+                    <p>I'm Dieu Luong, and I was born on February 3rd, 1998. <br>I am a student pursuing a Bachelor of Technology at<br> the Kwantlen Polytechnic University campus in Surrey, British Columbia, Canada.</p>
+                <div class="tab-titles">
+                    <p class="tab-links active-link" onclick="opentab('skills')">Skills</p><br>
+                    <p class="tab-links" onclick="opentab('experience')">Experience</p><br>
+                    <p class="tab-links" onclick="opentab('education')">Education</p><br>
+                </div>
+                <div class="tab-contents active-tab" id="skills">
+                    <ul>
+                        <li><span>UI/UX</span><br>Designning Web/App interfaces</li>
+                        <li><span>Web Development</span><br>Web app Development</li>
+                        <li><span>App Development</span><br>Building Android apps</li>
+                    </ul>
+                </div>
+                <div class="tab-contents" active-tab id="experience">
+                    <ul>
+                        <li><span>April 2021 - Sep 2021</span><br>IT technician, Mercy Medical Clinic, Delta, BC</li>
+                        <li><span>Jan 2019 - May 2019</span><br>Web developer Intern, FPT, HCM, Vietnam</li>
+                        
+                    </ul>
+                </div>
+                <div class="tab-contents" active-tab id="education">
+                    <ul>
+                        <li><span>2018 - Present</span><br>Information Technology Student at KPU</li>
+                        
+                    </ul>
+                </div>
+                
+                </div>
+            </div>
+        </div>
+        <div class="aboutMe-link">
+            <a href="about.html">MORE ABOUT ME</a>
+        </div>
+    </div>
+    <br>
+    <!-------Experience-->
+    <div id="experience1">
+        <div class="container">
+            <h1 class="sub-title">Work Experience</h1>
+            <div class="experiences-list">
+                <div>
+                    <i class="fa-solid fa-house-chimney-medical"></i>
+                    <h2>IT technician, Mercy Medical Clinic, Delta, BC</h2>
+                    <p>Built the server, added features, added users, added administrators, and set up and linked printers.</p>
+                    
+                </div>
+                <div>
+                    <i class="fa-solid fa-code"></i>
+                    <h2>Web developer Intern, FPT, HCM, Vietnam</h2>
+                    <p>Developed user interface using HTML, CSS and modern Javascript frameworks such as React to improve users’ engagement.</p>
+                    
+                </div>
+            </div>
+
+        </div>
+    </div>
+    <!----MyWork-->
+    <div id="project1">
+        <div class="container">
+            <h1 class="sub-title">My Projects</h1>
+            <div class="work-list">
+                <div class="work">
+                    <img src="hinhP/workIm1.png" alt="">
+                    <div class="layer">
+                        <h3>Amazon Clone</h3>
+                        <p>Created a complicated Amazon-like application from scratch using Node JS, MongoDB<br>
+                            Implement full login and authentication.
+                        </p>
+                        <a href="amazonClone.html"><i class="fa-solid fa-link"></i></a>
+                    </div>
+                </div>
+                <div class="work">
+                    <img src="hinhP/workIm4.png" alt="">
+                    <div class="layer">
+                        <h3>Calculator App for Android</h3>
+                        <p>Make a straightforward calculator that can, in response to user input, do addition, subtraction, multiplication, and division. 
+                        </p>
+                        <a href="calculator.html"><i class="fa-solid fa-link"></i></a>
+                    </div>
+                </div>
+                <div class="work">
+                    <img src="hinhP/workIm5.png" alt="">
+                    <div class="layer">
+                        <h3>Establish a local network to stop malware attacks.</h3>
+                        <p> Our main goal is to provide a secure network topology to prevent cyber-attacks and provide an overall better topology for businesses, and people alike. With the proper implementation of our project, we would successfully deliver a more secure and streamlined network.
+                        </p>
+                        <a href="networkSecure.html"><i class="fa-solid fa-link"></i></a>
+                    </div>
+                </div>
+            </div>
+            <a href="project.html" class="btn">See more</a>
+        </div>
+    </div>
+
+    <!--Contact-->
+    <div id="contact1">
+        <div class="container">
+            <h1 class="sub-title1">Let's work together!</h1>
+            <a href="contact.html" class="btn">Contact me</a>
+        </div>
+    </div>
+   
+    <!--footer-->
+    <footer>
+        <div class="waves">
+            <div class="wave" id="wave1"></div>
+            <div class="wave" id="wave2"></div>
+            <div class="wave" id="wave3"></div>
+            <div class="wave" id="wave4"></div>
+        </div>
+        <ul class="social_icon">
+            <li><a href="https://www.facebook.com/profile.php?id=100004705516229" alt=""><i class="fa-brands fa-facebook"></i></a></li>
+            <li><a href="https://github.com/lunsiu195" alt=""><i class="fa-brands fa-github"></i></a></li>
+            <li><a href="https://ca.linkedin.com/in/dieu-luong-93a32b22b" alt=""><i class="fa-brands fa-linkedin"></i></a></li>
+            <li><a href="#" alt=""><i class="fa-solid fa-envelopes-bulk"></i></a></li>
+        </ul>
+        <ul class="menu">
+            <li><a href="main.html">Home</a></li>
+                <li><a href="about.html">About</a></li>
+                <li><a href="project.html">Project</a></li>
+                <li><a href="contact.html">Contact</a></li>
+        </ul>
+        <p>&copy;2023 To Dieu Luong. All rights reserverd</p>
+    </footer>
+    
+   <script src="javaS.js"></script>
+   <script src="https://unpkg.com/typed.js@2.0.16/dist/typed.umd.js"></script>
+   <script>
+        var typed = new Typed(".auto-input", {
+            strings: ["Web Developer", "UI/UX Designer"],
+            typeSpeed: 100,
+            backSpeed: 100,
+            loop: true
+        })
+   </script>
+   <script>
+   var tablinks = document.getElementsByClassName("tab-links");
+    var tabcontents = document.getElementsByClassName("tab-contents");
+    function opentab(tabname){
+        for(tablink of tablinks){
+            tablink.classList.remove("active-link");
+        }
+        for(tabcontent of tabcontents){
+            tabcontent.classList.remove("active-tab");
+        }
+        event.currentTarget.classList.add("active-link");
+        document.getElementById(tabname).classList.add("active-tab");
+    }</script>
+</body>
+</html>
